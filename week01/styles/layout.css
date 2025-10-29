@@ -26,42 +26,42 @@ nav a {
 }
 
 .content {
-    display: flex;
-    flex-wrap: wrap; /*this forces the flexbox containers within to wrap within the larger container.. in this case it allows them to be side-by-side*/
-    height: 400px;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+    grid-template-columns: 3fr 1fr;
 }
 
-.content aside p {
+aside p {
     margin: 16px;
     background-color: whitesmoke
 }
 
-.content main p {
+main p {
     margin: 16px;
     background-color: lightgray;
 }
 
-main {
-    display: flex;
-    flex: 3; /*this sets it like a fractional unit; so it takes 3 of the four sections available for use in screen real-estate*/
-    background-color: lightgray;
-    color: black;
+.content header { /*sets up the header for use within the grid array*/
+  grid-area: header;
+  text-align: left;
 }
-
-aside {
-    display: flex;
-    flex: 1;
-    background-color: whitesmoke;
-    color: black;
+.content main { /*sets up the main for use within the grid array*/
+  grid-area: menu;
+  background-color: lightgray;
+  height: 400px;
 }
-
-footer {
-    background-color: #252222;
-    color: white;
-    padding-bottom: 120px;
-    text-align: center;
+.content aside { /*sets up the aside for use within the grid array*/
+  grid-area: content;
+  background-color: whitesmoke;
+  height: 400px;
 }
-
-footer p {
+.content footer { /*sets up the footer for use within the grid array*/
+    grid-area: footer;
+    text-align: center;  
+    height: 120px;
     padding-top: 16px;
+    color: white;
 }
