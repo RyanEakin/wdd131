@@ -1,0 +1,67 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #252222;
+}
+
+h1 {
+ background-color: #252222;
+ color: white;
+ padding-bottom: 60px;
+ padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+nav a {
+    background-color: black;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /*this forces the flexbox containers within to wrap within the larger container.. in this case it allows them to be side-by-side*/
+    height: 400px;
+}
+
+.content aside p {
+    margin: 16px;
+    background-color: whitesmoke
+}
+
+.content main p {
+    margin: 16px;
+    background-color: lightgray;
+}
+
+main {
+    display: flex;
+    flex: 3; /*this sets it like a fractional unit; so it takes 3 of the four sections available for use in screen real-estate*/
+    background-color: lightgray;
+    color: black;
+}
+
+aside {
+    display: flex;
+    flex: 1;
+    background-color: whitesmoke;
+    color: black;
+}
+
+footer {
+    background-color: #252222;
+    color: white;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 16px;
+}
