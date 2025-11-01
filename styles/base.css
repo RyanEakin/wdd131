@@ -81,8 +81,21 @@ span {
 
 .content header { 
   grid-area: header; /*sets up the header for use within the grid array*/
-  text-align: left;
+  background-color: #1d4d72;
+  text-align: center;
+  color: white;
+  padding-top: 16px;
 }
+
+.content header span {
+  text-align: center;
+  font-size: x-large;
+}
+
+.content header nav {
+    margin-top: 16px;
+}
+
 .content main { 
   grid-area: menu; /*sets up the main for use within the grid array*/
   background-color: lightgray;
@@ -135,5 +148,5 @@ footer p {
 }
 
 :hover {
-    
+
 }
