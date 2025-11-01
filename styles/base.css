@@ -12,6 +12,7 @@ h1 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
+    font-size:x-large;
 }
 
 nav {
@@ -49,7 +50,7 @@ span {
 }
 
 .about img {
-    width: 200;
+    width: 200px;
     height: auto;
     margin-left: 20px; /* Space between text and image */
     float: right;
