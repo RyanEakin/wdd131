@@ -44,22 +44,22 @@ main p {
     background-color: lightgray;
 }
 
-.content header { /*sets up the header for use within the grid array*/
-  grid-area: header;
+.content header { 
+  grid-area: header; /*sets up the header for use within the grid array*/
   text-align: left;
 }
-.content main { /*sets up the main for use within the grid array*/
-  grid-area: menu;
+.content main { 
+  grid-area: menu; /*sets up the main for use within the grid array*/
   background-color: lightgray;
   height: 400px;
 }
-.content aside { /*sets up the aside for use within the grid array*/
-  grid-area: content;
+.content aside { 
+  grid-area: content; /*sets up the aside for use within the grid array*/
   background-color: whitesmoke;
   height: 400px;
 }
-.content footer { /*sets up the footer for use within the grid array*/
-    grid-area: footer;
+.content footer { 
+    grid-area: footer; /*sets up the footer for use within the grid array*/
     text-align: center;  
     height: 120px;
     padding-top: 16px;
