@@ -1,3 +1,7 @@
+:root {
+    color: var(--color-color);
+}
+
 * {
     margin:0;
     padding: 0;
@@ -7,6 +11,7 @@
     --color-color: rgb(252, 255, 221);
     color:var(--color-color);
 }
+
 
 h1 {
     display: inline;
