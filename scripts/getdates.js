@@ -7,4 +7,4 @@ const secondsBase = d.getSeconds();
 const year = d.getFullYear();
 
 document.getElementById("currentYear").innerHTML = "&copy; " + year;
-document.getElementById("lastModified").innerHTML = "Last Modification: "+ document.lastModified;
+document.getElementById("lastModified").innerHTML = "Last Modification: " + document.lastModified;
