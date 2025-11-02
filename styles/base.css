@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background-color: black;
     --color-color: rgb(252, 255, 221);
+    color:var(--color-color);
 }
 
 h1 {
@@ -49,10 +50,12 @@ aside p {
 main p {
     margin: 16px;
     background-color: lightgray;
+    color:black;
 }
 
 h3 {
     background-color: #d3d3d3;
+    color: black;
     margin-left: 16px;
 }
 
