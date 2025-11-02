@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: black;
+    --background-color: #1d4d72;
     --color-color: rgb(252, 255, 221);
     color:var(--color-color);
 }
@@ -10,7 +11,7 @@
 h1 {
     display: inline;
     text-align: center;
-    background-color: #1d4d72;
+    background-color: var(--background-color) ;
     color: var(--color-color);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -20,7 +21,7 @@ h1 {
 
 h2 {
     text-align: center;
-    background-color: #1d4d72;
+    background-color: var(--background-color);
     color: var(--color-color);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -61,7 +62,7 @@ h3 {
 
 
 span {
-    background-color: orange;
+    background-color: var(--background-color);
 }
 
 .about img {
@@ -97,7 +98,7 @@ span {
 
 .content header { 
   grid-area: header; /*sets up the header for use within the grid array*/
-  background-color: #1d4d72;
+  background-color: var(--background-color);
   text-align: center;
   color: var(--color-color);
   padding-top: 16px;
@@ -132,13 +133,13 @@ span {
     text-align: center;  
     height: 80px;
     padding-top: 16px;
-    background-color: #1d4d72;
+    background-color: var(--background-color);
     color: var(--color-color);
 }
 /*End of Page Grid Container*/
 
 footer p {
-    background-color: #1d4d72;
+    background-color: var(--background-color);
 }
 
 .nation {
