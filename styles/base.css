@@ -1,5 +1,5 @@
 :root {
-    color: var(--color-color);
+    color: rgb(252, 255, 221);
 }
 
 * {
@@ -9,7 +9,7 @@
     background-color: black;
     --background-color: #1d4d72;
     --color-color: rgb(252, 255, 221);
-    color:var(--color-color);
+    color:rgb(252, 255, 221);
 }
 
 
