@@ -170,6 +170,6 @@ footer p {
     width: 200px;
 }
 
-:hover {
-
+.content header nav a:hover {
+    background-color: rgb(255, 188, 65);
 }
