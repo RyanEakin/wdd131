@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    --background-color: #1d4d72;
+    --white-back: #d3d3d3;
+    --color-color: rgb(252, 255, 221);
+}
+
+
+header p {
+	background-color: var(--background-color);
+    padding-top: 8px;
+    padding-left: 8px;
+	padding-bottom: 16px;
+    font-size: 24px;
+}
+main {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-left: 0;
+	text-align: center;
+}
+
+img {
+	height:auto;
+	width: 400px;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "🦃";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--background-color);
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+figure {
+	display: grid;
+	grid-template-columns: 1fr repeat(1fr);
+	justify-content: center;
+	gap: 8px;
+
+}
+
+footer {
+	text-align: center;  
+    height: 80px;
+    padding-top: 16px;
+    background-color: var(--background-color);
+    color: var(--color-color);
+}
+
+footer p {
+    background-color: var(--background-color);
+}
