@@ -14,7 +14,7 @@ document.getElementById("lastModified").innerHTML = "Last Modification: " + docu
 // copy of responsive-menu.js file
 
 const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+const navigation = document.querySelector("nav");
 
 hamButton.addEventListener("click", () => {
 	navigation.classList.toggle("open");

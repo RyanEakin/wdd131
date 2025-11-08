@@ -78,7 +78,7 @@ nav a:hover {
 
 figure {
 	display: grid;
-	grid-template-columns:repeat(1fr);
+	grid-template-columns: repeat(1fr);
 	justify-content: center;
 	gap: 8px;
 
