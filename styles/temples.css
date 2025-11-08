@@ -50,7 +50,7 @@ img {
 	content: "🦃";
 }
 
-nav ul {
+nav {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
@@ -58,14 +58,14 @@ nav ul {
 	color: #fff;
 }
 
-nav ul a {
+nav a {
 	display: none;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 }
-nav ul a:hover {
+nav a:hover {
 	background-color: #bbb;
 	color: #333;
 	font-weight: 700;

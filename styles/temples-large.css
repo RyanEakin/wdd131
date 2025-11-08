@@ -26,19 +26,15 @@
 		text-align: center;
 	}
 
-	figure {
-	
-	}
-
 	#menu {
 		display: none; /* hide hamburger button */
 	}
 
-	.navigation {
+	nav {
 		flex-direction: row;
 	}
 
-	.navigation a {
+	nav a {
 		display: block;
 		flex: 1 1 100%;
 	}

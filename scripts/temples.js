@@ -22,5 +22,3 @@ hamButton.addEventListener("click", () => {
 });
 
 // end of copy
-
-//start of new code
