@@ -2,7 +2,7 @@
     header {
         display: flex;
         background-color: var(--background-color);
-        color: white;
+        color: var(--white-back);
         justify-content: space-between;
     }
 
