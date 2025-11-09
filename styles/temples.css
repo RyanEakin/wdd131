@@ -1,6 +1,6 @@
 :root {
-	--background-color: #1d4d72;
-    --white-back: white;
+    color: white;
+	background-color: #054fb9;
 }
 
 * {
@@ -11,7 +11,6 @@
 
 
 header p {
-	background-color: var(--background-color);
     padding-top: 8px;
     padding-left: 8px;
 	padding-bottom: 16px;
@@ -38,7 +37,7 @@ img {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: var(--white-back);
+	color: white;
  	position: absolute;
 	right: 5px;
 	top: 5px;
@@ -56,8 +55,6 @@ nav {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: var(--background-color);
-	color: var(--white-back);
 }
 
 nav a {
@@ -65,11 +62,10 @@ nav a {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: var(--white-back);
+	color:white;
 }
 nav a:hover {
-	background-color: #bbb;
-	color: #333;
+	color: white;
 	font-weight: 700;
 }
 
@@ -83,17 +79,11 @@ figure {
 	grid-template-columns: 1fr;
 	justify-items: center;
 	gap: 8px;
-
 }
 
 footer {
 	text-align: center;  
     height: 80px;
     padding-top: 16px;
-    background-color: var(--background-color);
-    color: var(--white-back);
 }
 
-footer p {
-    background-color: var(--background-color);
-}

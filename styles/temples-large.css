@@ -1,8 +1,6 @@
 @media screen and (min-width: 600px) {
     header {
         display: flex;
-        background-color: var(--background-color);
-        color: var(--white-back);
         justify-content: space-between;
     }
 
