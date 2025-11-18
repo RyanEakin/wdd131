@@ -21,6 +21,7 @@ body {
     "menu"
     "footer";
     grid-template-columns: 1fr;
+    min-height: 100vh;
     
 
 }
@@ -148,7 +149,7 @@ body main {
 }
 
 body footer { 
-    position: relative;
+    position: fixed; /*to get this footer to be at the foot*/
     grid-area: footer; /*sets up the footer for use within the grid array*/
     text-align: center;  
     height: 80px;
@@ -165,6 +166,14 @@ footer p {
 footer span {
     background-color: var(--background-color);
 }
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 840px) {
 
