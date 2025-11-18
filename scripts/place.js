@@ -1,8 +1,9 @@
-let thermometer = document.querySelector(temp);
-let wind = document.querySelector(wind)
+let thermometer = document.querySelector("#temp");
+let wind = document.querySelector("#wind")
 
 let speed = 0;
 let temp = 0;
+let units = "none";
 
 
 function calculateWindChill(){
@@ -10,12 +11,12 @@ function calculateWindChill(){
 }
 
 if (units === "metric") {
-    if (temperature <= 10 && windSpeed > 4.8) {
+    if (temp <= 10 && speed > 4.8) {
         //calculateWindChill();
     }
 }
 else if (units === "imperial") {    
-    if (temperature <= 50 && windSpeed > 3) {
+    if (temp <= 50 && speed > 3) {
         //calculateWindChill();
     }}
 else {

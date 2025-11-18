@@ -93,7 +93,6 @@ body main {
 }
 
 .datatable {
-    align-items: right;
     text-align: center;
     width: 50%;
     background-color: white;
@@ -143,13 +142,19 @@ body main {
     border-top: 1px solid whitesmoke;
 }
 
+svg {
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
 .weather span {
     background-color: white;
     color: black;
 }
 
 body footer { 
-    position: fixed; /*to get this footer to be at the foot*/
+    position:static; /*to get this footer to be at the foot*/
     grid-area: footer; /*sets up the footer for use within the grid array*/
     text-align: center;  
     height: 80px;
@@ -223,7 +228,6 @@ footer span {
     }
 
     .datatable {
-        align-items: right;
         text-align: center;
         width: 50%;
         background-color: var(--white-back);
@@ -279,6 +283,10 @@ footer span {
         padding-left: 12px;
         content: "⛈️";
         /*🌪️🌩️⛈️🌧️🌨️☁️⛅☀️*/
+    }
+
+    svg {
+        display: none;
     }
 
     .weather span {
