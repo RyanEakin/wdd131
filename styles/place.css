@@ -1,0 +1,279 @@
+:root {
+    color: rgb(252, 255, 221);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(182, 0, 0);
+    --root-back: rgb(182, 0, 0);
+    --background-color: #1d4d72;
+    --white-back: #d3d3d3;
+    --color-color: rgb(252, 255, 221);
+    color:rgb(252, 255, 221);
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "footer";
+    grid-template-columns: 1fr;
+    
+
+}
+
+body header { 
+  grid-area: header; /*sets up the header for use within the grid array*/
+  background-color: var(--background-color);
+  text-align: center;
+  color: var(--color-color);
+  padding-top: 16px;
+}
+h1 {
+    background-color: var(--background-color);
+    padding-bottom: 16px;
+}
+
+body header span {
+  text-align: center;
+  font-size: x-large;
+}
+
+body header nav {
+    margin-top: 16px;
+}
+
+body main { 
+  grid-area: menu; /*sets up the main for use within the grid array*/
+  background-color: var(--background-color);
+  height: auto;
+  max-width: 1200px;
+
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute; /* Absolute positioning allows overlaying on the image */
+    opacity: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    text-align: center;
+}
+
+.overlay h2 {
+    position: relative;
+    background-color: white;
+    color: black;
+    
+}
+
+.data {
+    position: relative;
+    background-color: white;
+    width: 100%;
+}
+
+.data h2 {
+    text-align: center;
+    width: 95%;
+}
+
+.datatable {
+    align-items: right;
+    text-align: center;
+    width: 50%;
+    background-color: white;
+    padding-left: 130px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 150px 240px 0px 0px;
+}
+
+.row:first-child {
+    padding-top: 16px;
+    background-color: white;
+}
+
+.row:last-child {
+    padding-bottom: 16px;
+    background-color: white;
+}
+
+.col { /*remember to check if the CSS is even LINKed*/
+	padding: 5px;
+    align-items: center;
+    text-align: right;
+    background-color: white;
+    color: black;
+}
+
+.col-value {
+    align-items: center;
+    text-align: left;
+    padding-top: 6px;
+    background-color: white;
+    color: black;
+}
+
+.weather {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.weather h2 {
+    background-color: white;
+    border-top: 1px solid whitesmoke;
+}
+
+.weather span {
+    background-color: white;
+    color: black;
+}
+
+body footer { 
+    position: relative;
+    grid-area: footer; /*sets up the footer for use within the grid array*/
+    text-align: center;  
+    height: 80px;
+    padding-top: 16px;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--color-color);
+    bottom: 0px;
+}
+
+footer p {
+    background-color: var(--background-color);
+}
+footer span {
+    background-color: var(--background-color);
+}
+
+@media screen and (min-width: 840px) {
+
+    body main {
+        background-color: var(--root-back);
+    }
+    
+    .image-container {
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .image-container img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .overlay {
+        position: absolute; /* Absolute positioning allows overlaying on the image */
+        opacity: .8;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    }
+
+    .overlay h2 {
+        position: relative;
+        background-color: green;
+        color: white;
+        padding: 16px;
+        top: 16px;
+        left: -10px;
+    }
+
+    .data {
+        position: absolute;
+        background-color: var(--white-back);
+        top: 120px;
+        left: 20px;
+        width: 350px;
+    }
+
+    .data h2 {
+        text-align: left;
+        width: 95%;
+    }
+
+    .datatable {
+        align-items: right;
+        text-align: center;
+        width: 50%;
+        background-color: var(--white-back);
+        padding-left: 0px;
+    }
+    
+    .row {
+        display: grid;
+        grid-template-columns: 150px 200px 0px 0px;
+    }
+
+    .row:first-child {
+        padding-top: 32px;
+        background-color: var(--white-back);
+    }
+
+    .row:last-child {
+        padding-bottom: 16px;
+        background-color: var(--white-back);
+    }
+    
+    .col { /*remember to check if the CSS is even LINKed*/
+    	padding: 5px;
+        align-items: center;
+        text-align: right;
+        background-color: var(--white-back);
+        color: black;
+    }
+    .col-value {
+        align-items: center;
+        text-align: left;
+        padding-top: 6px;
+        background-color: var(--white-back);
+        color: black;
+    }
+
+    .weather {
+        position: absolute;
+        background-color: var(--white-back);
+        width: 350px;
+        top: 450px;
+        left: 800px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .weather h2 {
+        background-color: green;
+        padding-left: 12px;
+        width: 95%;
+    }
+    .weather h2::after {
+        background-color: green;
+        padding-left: 12px;
+        content: "⛈️";
+        /*🌪️🌩️⛈️🌧️🌨️☁️⛅☀️*/
+    }
+
+    .weather span {
+        background-color: var(--white-back);
+    }
+    
+}

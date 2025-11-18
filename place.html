@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description"
+        content="this page is for the country page assignment">
+    <meta name="author" content="RyanEakin">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>United States of America</h1>
+    </header>
+    <main>
+        <div class=".image-container">
+            <picture>
+                <source srcset="images/ca-high.webp" media="(min-width: 1000px)">
+                <source srcset="images/ca-med.webp" media="(min-width: 615px)">
+                <img src="images/ca-high-2.webp" alt="peregrine falcon image">
+            </picture>
+            
+
+            <section class="overlay data">
+                <h2>Data</h2>
+                	<div class="datatable">
+	            	    <div class="row">
+	            	    	<div class="col">Area:</div>
+	            	    	<div class="col-value">3,796,742 sq mi</div>
+	            	    </div>
+	            	    <div class="row">
+	            	    	<div class="col">Population:</div>
+	            	    	<div class="col-value">342,034,432</div>
+	            	    </div>
+	            	    <div class="row">
+	            	    	<div class="col">Capital: </div>
+	            	    	<div class="col-value">Washington D.C.</div>
+	            	    </div>
+                        <div class="row">
+	            	    	<div class="col">Languages: </div>
+	            	    	<div class="col-value">English, Basque, Spanish</div>
+	            	    </div>
+                        <div class="row">
+	            	    	<div class="col">Currency: </div>
+	            	    	<div class="col-value">United States Dollar</div>
+	            	    </div>
+                        <div class="row">
+	            	    	<div class="col">Time-Zone: </div>
+	            	    	<div class="col-value">UTC-7</div>
+	            	    </div>
+                        <div class="row">
+	            	    	<div class="col">Calling Code: </div>
+	            	    	<div class="col-value">+1</div>
+	            	    </div>
+                        <div class="row">
+	            	    	<div class="col">Internet TLD: </div>
+	            	    	<div class="col-value">.us</div>
+	            	    </div>
+	            </div>
+            </section>
+            <section class="overlay weather">
+                <h2>Weather </h2>
+                <div class="datatable">
+                    <div class="row">
+	            		<div class="col">Temperature: </div>
+	            		<div class="col-value"><span id="temp" > ℉</span></div>
+	            	</div>
+                    <div class="row">
+	            		<div class="col">Conditions: </div>
+	            		<div class="col-value"><span id="cond" ></span></div>
+	            	</div>
+                    <div class="row">
+	            		<div class="col">Wind: </div>
+	            		<div class="col-value"><span id="wind" > mp/h</span></div>
+	            	</div>
+                    <div class="row">
+	            		<div class="col">Wind Chill: </div>
+	            		<div class="col-value"><span id="chill" > ℉</span></div>
+	            	</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> 🦃 Ryan Michael Eakin 🦃 United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
