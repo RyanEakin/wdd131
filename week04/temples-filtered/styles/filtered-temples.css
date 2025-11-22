@@ -33,7 +33,7 @@ img {
 }
 
 /* small view navigation */
-#menu {
+#navMenu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
@@ -43,11 +43,11 @@ img {
 	top: 5px;
 }
 
-#menu::before {
+#navMenu::before {
 	content: "☰";
 }
 
-#menu.open::before {
+#navMenu.open::before {
 	content: "🦃";
 }
 
