@@ -10,12 +10,12 @@
         font-size: 24px;
     }
 
-	h3 {
+	h1, h3 {
 		font-size: 2rem;
 		text-align: center;
 	}
 
-	#navMenu {
+	#menu {
 		display: none; /* hide hamburger button */
 	}
 
