@@ -1,0 +1,17 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+img {
+    display: block;
+    width: 400px;
+    padding: 3px;
+    animation: fadeIn 1s ease-in; /* remove infinite*/
+}
