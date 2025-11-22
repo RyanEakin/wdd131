@@ -9,6 +9,9 @@
 	box-sizing: border-box;
 }
 
+header {
+	background-color: #062e8e;
+}
 
 header p {
     padding-top: 8px;
@@ -52,6 +55,7 @@ img {
 }
 
 nav {
+	background-color: #062e8e;
 	display: flex;
 	flex-direction: column;
 	list-style: none;
@@ -75,6 +79,7 @@ nav a:hover {
 }
 
 section {
+	background-color: #073fa3;
 	display: grid;
 	grid-template-columns: 1fr;
 	justify-items: center;
