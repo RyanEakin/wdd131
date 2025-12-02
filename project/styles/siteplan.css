@@ -1,7 +1,16 @@
 :root {
-    color: #00599c;
-    background-color: #f9f9f9;
+    background-color: #1781d2;
+    font-family: "Science Gothic", sans-serif;
+    font-weight:3s00;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "CTRS" 0;
+
 }
+
+
 
 section {
     background-color: #e4d6bf;

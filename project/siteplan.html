@@ -8,66 +8,74 @@
         content="this webpage is made for the WDD131 – Dynamic Web Fundamentals BYU pathway course, and is a portfolio to show forth my skills with designing web-pages; the purpose of the page is to talk about the steam hardware that is currently slated for an early 2026 release date, specifically on the steam machine and the steam frame as the main focus">
     <meta name="author" content="RyanEakin">
     <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 </head> 
-    
-<body>
-    <section><h1>Steam 2026 Hardware Research Page</h1></section>
-    <Section>
-        <h2>Purpose</h2>
-        <p>this page is designed for the sole purpose of researching
-            the 2026 steam hardware [namely the steam machine and steam frame]
-            against one to two competitors of similar specifications,
-            as well as to lock in the sentiments of the time
-            when the steam hardware was announced to release day</p>
-    </Section>
-    <section>
-        <h2>Scenerios</h2>
-        <ul>
+    <body>
+        <section><h1>Steam 2026 Hardware Research Page</h1></section>
+        <Section>
+            <h2>Purpose</h2>
+            <p>this page is designed for the sole purpose of researching
+                the 2026 steam hardware [namely the steam machine and steam frame]
+                against one to two competitors of similar specifications,
+                as well as to lock in the sentiments of the time
+                when the steam hardware was announced to release day</p>
+        </Section>
+        <section>
+            <h2>Scenerios</h2>
             <p>what are the steam hardware specs compaired to the competition?</p>
             <p>what is the price? [currently unavailable and will be coming in early 2026]</p>
             <p>what are the likely use-cases for the devices mentioned?</p>
             <p>what Technologies were used to complete the unique features of the devices?</p>
-        </ul>
-    </section>
-    <section>
-        <h2>Color Schema </h2>
-        <!--taking reference from the IRS government page
-         because WCAG 2.2 doesn't account for ACTUAL color contrast...
-         but for the test number contrast... 
-         I can see many web-pages [steam 2026 hardware being an example] in
-         Monochrome
-         no Red
-         no Green
-         no Blue
-         types of color blindness simulations
-         by Both
-         Firefox Accessibility Tab in Devtools
-         AND
-         WebAIM WAVE extension desaturation toggle
-         
-         
-         You can tell I dislike this standard *merely* for the fact
-         that it is:
-         1. not easily testable with browsers AND the official extension past values...
-          it ISN'T about the Actual Sight of a color-blind/visually-disabled person but a SCORECARD!
-         2. makes me see only monochrome as an color schema option EVEN though it is about text clarity
-         3. finally it basically makes EVERY webpage gaudy/disgusting. no exceptions.-->
-        <p>Primary Color will be blue = #00599c</p>
-        <p>#e4d6bf beige : image background</p>
-        <p>Background Color will be white = #f9f9f9</p>
-    </section>
-    <section>
-        <h2>Typography</h2>
-        <p>text color will be presumably white, when paired with a blue backgrond</p>
-        <p>else it will be black</p>
-    </section>
-    <section>
-        <h2>Wireframe</h2>
-        <p>I have made some wireframes and will pair them within this folder</p>
-        
-    </section>
-</body>
-<footer>
+        </section>
+        <section>
+            <h2>Color Schema </h2>
+            <!--taking reference from the IRS government page
+            because WCAG 2.2 doesn't account for ACTUAL color contrast...
+            but for the test number contrast... 
+            I can see many web-pages [steam 2026 hardware being an example] in
+            Monochrome
+            no Red
+            no Green
+            no Blue
+            types of color blindness simulations
+            by Both
+            Firefox Accessibility Tab in Devtools
+            AND
+            WebAIM WAVE extension desaturation toggle
+            
+            
+            You can tell I dislike this standard *merely* for the fact
+            that it is:
+            1. not easily testable with browsers AND the official extension past values...
+            it ISN'T about the Actual Sight of a color-blind/visually-disabled person but a SCORECARD!
+            2. makes me see only monochrome as an color schema option EVEN though it is about text clarity
+            3. finally it basically makes EVERY webpage gaudy/disgusting. no exceptions.
+            
+            12/2/25 later learned more about said standard... wish web browsers were better equipped for them-->
+            <p></p>
+            <p>#e4d6bf beige : section background</p>
+            <p>Background Color will be white = #1781d2</p>
+        </section>
+        <section>
+            <h2>Typography</h2>
+            <p>text color will be black</p>
+            <p>font will be Science Gothic for the whole page and 16px font</p>
+        </section>
+        <section>
+            <h2>Wireframe</h2>
+            <p>I have made some wireframes and will pair them within this folder</p>
+            <img src="images/Wireframe-Design-Home-Landscape.png" alt="Desktop-Wireframe-Design" loading="lazy">
+            <img src="images/Wireframe-Design-Home-Mobile.png" alt="Mobile-Wireframe-Design" loading="lazy">
+            
+        </section>
+        <footer>
 
-</footer>
+            <p><span id="currentYear"></span> ❄️ Ryan Michael Eakin ❄️ United States</p>
+            <p id="lastModified"></p>
+
+        </footer>
+    </body>
 </html>
