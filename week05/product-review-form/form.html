@@ -23,20 +23,20 @@
         <form method="get" action="review.html" class="wf1">
             <fieldset>
                 <label>Product Name<select name="productName" id="prodName" required>
-                    <option value="productChoose" selected disabled>Choose a Product ... </option>
+                    <option value="" selected disabled>Select a Product ... </option>
                     <!--insert options here via javascript-->
                 </select></label>
 
             <p>Overall Rating</p>
             <div class='radioRating'>
-                <label class='radioOption'><strong>✰</strong><br><input type="radio" name="star-rating" id="bad" required></label>
-                <label class='radioOption'><strong></strong>✰✰</strong><br><input type="radio" name="star-rating" id="decent" required></label>
-                <label class ='radioOption'><strong></strong>✰✰✰</strong><br><input type="radio" name="star-rating" id="good" required></label>
-                <label class ='radioOption'><strong></strong>✰✰✰✰</strong><br><input type="radio" name="star-rating" id="better" required></label>
-                <label class ='radioOption'><strong></strong>✰✰✰✰✰</strong><br><input type="radio" name="star-rating" id="best" required></label>
+                <label class='radioOption'>✰<br><input type="radio" name="star-rating" id="bad" required></label>
+                <label class='radioOption'>✰✰<br><input type="radio" name="star-rating" id="decent" required></label>
+                <label class='radioOption'>✰✰✰<br><input type="radio" name="star-rating" id="good" required></label>
+                <label class='radioOption'>✰✰✰✰<br><input type="radio" name="star-rating" id="better" required></label>
+                <label class='radioOption'>✰✰✰✰✰<br><input type="radio" name="star-rating" id="best" required></label>
             </div>
 
-                <label>Date of Installation<input type="date" name="installDate" id="installDate" value="MM-DD-YYYY" required></label>
+                <label>Date of Installation<input type="date" name="installDate" id="installDate" value="yyyy-mm-dd" required></label>
 
                 <p>Which features did you find useful in the product? <br> (check all that apply)</p>
                 <label><input type="checkbox" name="diamond" id="durable">Durability</label>
