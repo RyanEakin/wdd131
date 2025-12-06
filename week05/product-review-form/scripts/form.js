@@ -32,12 +32,14 @@ const hoursBase = d.getHours();
 const minutesBase = d.getMinutes();
 const secondsBase = d.getSeconds();
 
-
 const year = d.getFullYear();
+const month = String(d.getMonth() + 1).padStart(2, '0');
+const day = String(d.getDate()).padStart(2, '0');
 
 document.getElementById("currentYear").innerHTML = "&copy; " + year;
 document.getElementById("lastModified").innerHTML = "Last Modification: " + document.lastModified;
 
+document.getElementById("installDate").value = `${year}-${month}-${day}`;
 
 // the code for the product name select box start
 
