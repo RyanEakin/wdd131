@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review-Form-WDD131</title>
+    <meta name="description"
+        content="this webpage is made for the WDD131 – Dynamic Web Fundamentals BYU pathway course">
+    <meta name="author" content="RyanEakin">
+    <!-- STYLE SHEETS -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="styles/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="styles/large.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header><h1>Product Review</h1></header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label>Product Name<select name="productName" id="prodName" required>
+                    <option value="productChoose" selected disabled>Choose a Product ... </option>
+                    <!--insert options here via javascript-->
+                </select></label>
+
+            <p>Overall Rating</p>
+            <div class='radioRating'>
+                <label class='radioOption'><strong>✰</strong><br><input type="radio" name="star-rating" id="bad" required></label>
+                <label class='radioOption'><strong></strong>✰✰</strong><br><input type="radio" name="star-rating" id="decent" required></label>
+                <label class ='radioOption'><strong></strong>✰✰✰</strong><br><input type="radio" name="star-rating" id="good" required></label>
+                <label class ='radioOption'><strong></strong>✰✰✰✰</strong><br><input type="radio" name="star-rating" id="better" required></label>
+                <label class ='radioOption'><strong></strong>✰✰✰✰✰</strong><br><input type="radio" name="star-rating" id="best" required></label>
+            </div>
+
+                <label>Date of Installation<input type="date" name="installDate" id="installDate" value="MM-DD-YYYY" required></label>
+
+                <p>Which features did you find useful in the product? <br> (check all that apply)</p>
+                <label><input type="checkbox" name="diamond" id="durable">Durability</label>
+                <label><input type="checkbox" name="barrel" id="easy">Ease of Use</label>
+                <label><input type="checkbox" name="actor" id="perform">Performance</label>
+                <label><input type="checkbox" name="blueprint" id="design">Design</label>
+
+                <label>Written Review (Optional)<br><textarea name="shakespeare" id="writ-review" ></textarea></label>
+                <label>Your Name(Optional)<input type="text" name="card" id="identity"></label>
+            </fieldset>
+             <input type="submit" value="Send My Review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> ❄️ Ryan Michael Eakin ❄️ United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
