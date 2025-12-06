@@ -22,30 +22,30 @@
     <main>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <label>Product Name<select name="productName" id="prodName" required>
+                <label for="prodName">Product Name<select name="productName" id="prodName" required>
                     <option value="" selected disabled>Select a Product ... </option>
                     <!--insert options here via javascript-->
                 </select></label>
 
             <p>Overall Rating</p>
             <div class='radioRating'>
-                <label class='radioOption'>✰<br><input type="radio" name="star-rating" id="bad" value="bad"></label>
-                <label class='radioOption'>✰✰<br><input type="radio" name="star-rating" id="decent" value="decent" required></label>
-                <label class='radioOption'>✰✰✰<br><input type="radio" name="star-rating" id="good" value="good" required></label>
-                <label class='radioOption'>✰✰✰✰<br><input type="radio" name="star-rating" id="better" value="better" required></label>
-                <label class='radioOption'>✰✰✰✰✰<br><input type="radio" name="star-rating" id="best" value="best" required></label>
+                <label class='radioOption' for="bad">✰<br><input type="radio" name="star-rating" id="bad" value="bad" required></label>
+                <label class='radioOption' for="decent">✰✰<br><input type="radio" name="star-rating" id="decent" value="decent" required></label>
+                <label class='radioOption' for="good">✰✰✰<br><input type="radio" name="star-rating" id="good" value="good" required></label>
+                <label class='radioOption' for="better">✰✰✰✰<br><input type="radio" name="star-rating" id="better" value="better" required></label>
+                <label class='radioOption' for="best">✰✰✰✰✰<br><input type="radio" name="star-rating" id="best" value="best" required></label>
             </div>
 
                 <label>Date of Installation<input type="date" name="installDate" id="installDate" value="" required></label>
 
                 <p>Which features did you find useful in the product? <br> (check all that apply)</p>
-                <label><input type="checkbox" name="diamond" id="durable">Durability</label>
-                <label><input type="checkbox" name="barrel" id="easy">Ease of Use</label>
-                <label><input type="checkbox" name="actor" id="perform">Performance</label>
-                <label><input type="checkbox" name="blueprint" id="design">Design</label>
+                <label for="durable"><input type="checkbox" name="diamond" id="durable">Durability</label>
+                <label for="easy"><input type="checkbox" name="barrel" id="easy">Ease of Use</label>
+                <label for="perform"><input type="checkbox" name="actor" id="perform">Performance</label>
+                <label for="design"><input type="checkbox" name="blueprint" id="design">Design</label>
 
-                <label>Written Review (Optional)<br><textarea name="shakespeare" id="writ-review" ></textarea></label>
-                <label>Your Name(Optional)<input type="text" name="card" id="identity"></label>
+                <label for="writ-review">Written Review (Optional)<br><textarea name="shakespeare" id="writ-review" ></textarea></label>
+                <label for="identity">Your Name(Optional)<input type="text" name="card" id="identity"></label>
             </fieldset>
              <input type="submit" value="Send My Review">
         </form>
