@@ -22,12 +22,12 @@
     <main>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <label for="prodName">Product Name<select name="productName" id="prodName" required>
+                <label for="prodName">*Product Name<select name="productName" id="prodName" required>
                     <option value="" selected disabled>Select a Product ... </option>
                     <!--insert options here via javascript-->
                 </select></label>
 
-            <p>Overall Rating</p>
+            <p>*Overall Rating</p>
             <div class='radioRating'>
                 <label class='radioOption' for="bad">✰<br><input type="radio" name="star-rating" id="bad" value="bad" required></label>
                 <label class='radioOption' for="decent">✰✰<br><input type="radio" name="star-rating" id="decent" value="decent" required></label>
@@ -36,7 +36,7 @@
                 <label class='radioOption' for="best">✰✰✰✰✰<br><input type="radio" name="star-rating" id="best" value="best" required></label>
             </div>
 
-                <label>Date of Installation<input type="date" name="installDate" id="installDate" value="" required></label>
+                <label for="installDate">*Date of Installation<input type="date" name="installDate" id="installDate" value="" required></label>
 
                 <p>Which features did you find useful in the product? <br> (check all that apply)</p>
                 <label for="durable"><input type="checkbox" name="diamond" id="durable">Durability</label>
