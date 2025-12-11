@@ -12,4 +12,19 @@ document.getElementById("lastModified").innerHTML = "Last Modification: " + docu
 
 // start of form generation code
 
+function generateCompare() {
+    const selectList = document.querySelector('select')
+
+    products.forEach(productsList =>{
+        let newOption = document.createElement('option')
+        newOption.innerHTML = productsList.name;
+        newOption.value = productsList.id;
+
+        selectList.appendChild(newOption);
+})
+
+}
+
+window.generateCompare()
+
 // end of form generation code
