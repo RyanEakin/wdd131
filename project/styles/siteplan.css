@@ -29,7 +29,7 @@ header nav{
     display: flex;
     justify-content: space-around;
     background-color: #003a70;
-    padding: 4px;
+    padding: 16px;
     width: 100%;
 }
 
@@ -68,26 +68,31 @@ footer {
 
 @media screen and (min-width: 840px) {
     header nav{
-    display: flex;
-    justify-content: space-around;
-    background-color: #003a70;
-    padding: 1px;
-    width: 100%;
-}
+        display: flex;
+        justify-content: space-around;
+        background-color: #003a70;
+        padding: 1px;
+        width: 100%;
+    }
 
-header nav a {
-    text-decoration: none;
-    color:  white;
-    background-color: #004585;
-    padding: 1px;
-    border-radius: 15px 30px;
-}
+    header nav a {
+        text-decoration: none;
+        color:  white;
+        background-color: #004585;
+        padding: 1px;
+        border-radius: 15px 30px;
+    }
 
-header nav a:hover {
-    background-color: #002D57;
-}
+    header nav a:hover {
+        background-color: #002D57;
+    }
 
-.active::before {
-    content: "❄️";
-}
+    .active::before {
+        content: "❄️";
+    }
+
+    section iframe {
+        width: 600px;
+        height: 325px;
+    }
 }
