@@ -91,6 +91,13 @@ footer {
         content: "❄️";
     }
 
+    section {
+        width: 95%;
+        margin: 8px;
+        padding: 8px;
+        background-color: #e4d6bf;
+    }
+
     section iframe {
         width: 600px;
         height: 325px;
