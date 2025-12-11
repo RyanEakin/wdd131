@@ -29,7 +29,7 @@ header nav{
     display: flex;
     justify-content: space-around;
     background-color: #003a70;
-    padding: 16px;
+    padding: 4px;
     width: 100%;
 }
 
@@ -37,8 +37,9 @@ header nav a {
     text-decoration: none;
     color:  white;
     background-color: #004585;
-    padding: 10px;
+    padding: 2px;
     border-radius: 15px 30px;
+    font-size: 95%;
 }
 
 header nav a:hover {
@@ -67,19 +68,21 @@ footer {
 }
 
 @media screen and (min-width: 840px) {
+
     header nav{
         display: flex;
+        width: 100%;
         justify-content: space-around;
         background-color: #003a70;
-        padding: 1px;
-        width: 100%;
+        padding: 4px;
+
     }
 
     header nav a {
         text-decoration: none;
         color:  white;
         background-color: #004585;
-        padding: 1px;
+        padding: 8px;
         border-radius: 15px 30px;
     }
 

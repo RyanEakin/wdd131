@@ -8,3 +8,8 @@ const year = d.getFullYear();
 
 document.getElementById("currentYear").innerHTML = "&copy; " + year;
 document.getElementById("lastModified").innerHTML = "Last Modification: " + document.lastModified;
+
+
+// start of form generation code
+
+// end of form generation code
