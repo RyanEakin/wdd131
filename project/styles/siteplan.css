@@ -14,9 +14,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 header {
+    text-align: center;
+}
+
+h1 {
     text-align: center;
 }
 
@@ -49,6 +54,7 @@ section {
     padding: 8px;
     background-color: #e4d6bf;
 }
+
 li{
     margin: 16px;
 }
