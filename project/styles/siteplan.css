@@ -10,8 +10,52 @@
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header {
+    text-align: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #003a70;
+    padding: 4px;
+    width: 100%;
+}
+
+header nav a {
+    text-decoration: none;
+    color:  white;
+    background-color: #004585;
+    padding: 10px;
+    border-radius: 15px 30px;
+}
+
+header nav a:hover {
+    background-color: #002D57;
+}
+
+.active::before {
+    content: "❄️";
+}
 
 section {
+    margin: 8px;
+    padding: 8px;
     background-color: #e4d6bf;
+}
+li{
+    margin: 16px;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+    background-color: #003a70;
+    color: white;
 }
